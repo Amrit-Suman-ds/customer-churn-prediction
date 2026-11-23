@@ -110,6 +110,16 @@ Three machine learning models were trained and evaluated on the customer churn d
 
 Logistic Regression was selected for further experimentation with classification thresholds to explore the trade-off between precision and recall, particularly for identifying customers likely to churn.
 
+### Threshold Tuning
+
+The default classification threshold of 0.50 was adjusted to 0.35 to increase the model's ability to identify customers likely to churn.
+
+Lowering the threshold increased recall from 52.14% to 71.93%, allowing the model to identify more actual churners. However, this came at the cost of lower precision and accuracy, meaning more non-churning customers were incorrectly flagged as potential churners.
+
+This experiment demonstrates the trade-off between precision and recall and highlights how classification thresholds can be adjusted based on business objectives.
+
+**Note:** The threshold was explored using test-set results in this project. In a more rigorous workflow, threshold selection should be performed using validation data, with the final test set kept untouched for unbiased evaluation.
+
 ## Cross-Validation
 Logistic Regression achieved a mean 5-fold cross-validation accuracy of approximately 80.48%, with a standard deviation of approximately 1.28%.
 
