@@ -36,6 +36,21 @@ The analysis revealed several patterns associated with customer churn:
 
 These findings were used to identify potential customer retention opportunities.
 
+### Visual Analysis
+
+#### Customer Churn Distribution
+![Churn Distribution](images/churn_distribution.png)
+
+#### Churn by Contract Type
+![Churn by Contract](images/churn_by_contract.png)
+
+#### Churn vs Tenure
+![Churn vs Tenure](images/churn_by_tenure.png)
+
+#### Churn vs Monthly Charges
+![Churn vs Monthly Charges](images/churn_by_monthly_charges.png)
+
+
 ## Machine Learning Models
 The following classification models were developed and evaluated:
 
