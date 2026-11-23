@@ -86,6 +86,18 @@ Cross-validation was also performed to assess model consistency.
 
 The threshold of 0.35 increased recall, allowing the model to identify more churn-risk customers, while reducing accuracy and precision.
 
+## Model Performance Comparison
+
+Three machine learning models were trained and evaluated on the customer churn dataset.
+
+| Model | Accuracy | Precision | Recall | F1 Score |
+|---|---:|---:|---:|---:|
+| Logistic Regression | 79.91% | 65.22% | 52.14% | 57.95% |
+| Decision Tree | 79.42% | 63.13% | 54.01% | 58.21% |
+| Random Forest | 79.99% | 65.86% | 51.07% | 57.53% |
+
+Logistic Regression was selected for further experimentation with classification thresholds to explore the trade-off between precision and recall, particularly for identifying customers likely to churn.
+
 ## Cross-Validation
 Logistic Regression achieved a mean 5-fold cross-validation accuracy of approximately 80.48%, with a standard deviation of approximately 1.28%.
 
