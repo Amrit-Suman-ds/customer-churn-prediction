@@ -69,6 +69,18 @@ The models were evaluated using:
 
 Cross-validation was also performed to assess model consistency.
 
+## Data Cleaning & Preprocessing
+
+The dataset was inspected for missing values, data types, and inconsistencies before model training.
+
+- **TotalCharges:** Converted from object/string to numeric format to enable mathematical analysis.
+- **Missing Values:** The 11 missing values in `TotalCharges` were handled during preprocessing.
+- **Categorical Encoding:** Categorical variables were encoded into numerical representations for machine learning.
+- **Feature Scaling:** Numerical features were scaled where required, particularly for Logistic Regression.
+- **Train-Test Split:** The data was divided into training and testing sets to evaluate model performance on unseen data.
+
+Preprocessing was integrated into the machine learning workflow to ensure consistent transformations during model training and evaluation.
+
 ## Model Results
 
 ### Logistic Regression — Default Threshold (0.50)
